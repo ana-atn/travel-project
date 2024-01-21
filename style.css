@@ -153,6 +153,12 @@ footer p {
   grid-gap: 65px;
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-3-col-small-gap {
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+}
+
 .img-responsive {
   width: 100%;
 }
