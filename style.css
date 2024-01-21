@@ -1,7 +1,65 @@
-h1 {
+body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #0a4765;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("images/lisbon-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 180px 50px;
+  text-align: center;
+}
+
+h1 {
   font-size: 96px;
   font-weight: 700;
-  line-height: 144px;
-  text-align: left;
+  line-height: 1.5;
+  margin: 0;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding: 16px 32px;
+  margin-top: 50px;
+  color: #272044;
+  background-color: white;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 220px 50px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 12px;
+  }
 }
