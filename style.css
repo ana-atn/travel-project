@@ -3,12 +3,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  background-color: #0a4765;
-}
-
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.6),
+      rgba(39, 32, 68, 0.6)
+    ),
     url("images/lisbon-background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,19 +16,19 @@ header {
   text-align: center;
 }
 
-h1 {
+header h1 {
   font-size: 96px;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
 }
-h2 {
+header h2 {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
 }
-h3 {
+header h3 {
   font-size: 24px;
   font-weight: 900;
   line-height: 1.5;
@@ -49,17 +48,69 @@ header a {
   background-color: white;
 }
 
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("images/lisbon-footer.png");
+  color: white;
+  padding: 65px 170px;
+}
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+}
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+footer p {
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.row {
+  margin-right: 16px;
+}
 @media (max-width: 900px) {
   header {
     padding: 220px 50px;
   }
-  h1 {
+  header h1 {
     font-size: 48px;
   }
-  h2 {
+  header h2 {
     font-size: 20px;
   }
-  h3 {
+  header h3 {
+    font-size: 12px;
+  }
+  footer {
+    padding: 50px 30px;
+  }
+  footer h3 {
+    font-size: 15px;
+  }
+  footer p,
+  footer a {
     font-size: 12px;
   }
 }
